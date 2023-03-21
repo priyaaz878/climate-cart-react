@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "./Category.scss";
 
+
 const Category = ({ categories }) => {
     const navigate = useNavigate();
     return (
@@ -14,9 +15,9 @@ const Category = ({ categories }) => {
                     >
                         <img
                             src={
-                                process.env.REACT_APP_STRIPE_APP_DEV_URL +
+                                process.env.REACT_APP_DEV_URL +
                                 item.attributes.img.data.attributes.url
-                            }
+                            }alt=""
                         />
                     </div>
                 ))}
